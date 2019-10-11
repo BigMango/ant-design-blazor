@@ -26,7 +26,7 @@ namespace AntDesign
 
         [CascadingParameter(Name = "radioGroup")]
         public AntCheckboxGroupContext radioGroup { get; set; }
-        protected void OnChangeHandler(UIChangeEventArgs ev)
+        protected void OnChangeHandler(ChangeEventArgs ev)
         {
 
             if (this.radioGroup != null)

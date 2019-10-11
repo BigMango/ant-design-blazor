@@ -14,7 +14,7 @@ namespace AntDesign
         public OneOf<RenderFragment, string> label { get; set; }
         public AntCheckboxValueType value { get; set; }
         public bool? disabled { get; set; }
-        public EventCallback<UIChangeEventArgs> OnChange { get; set; }
+        public EventCallback<ChangeEventArgs> OnChange { get; set; }
     }
 
     public class AntCheckboxGroupContext

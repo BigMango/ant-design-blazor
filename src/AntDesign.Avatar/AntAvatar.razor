@@ -4,7 +4,7 @@
 <span class="@Class" style="@style">
     @if (!string.IsNullOrEmpty(src) && isImgExist)
     {
-        <img src="@src" srcset="@srcSet" alt="@alt" onerror="@onError" />
+        <img src="@src" srcset="@srcSet" alt="@alt" @onerror="onError" />
     }
     else if (!string.IsNullOrEmpty(icon))
     {
@@ -17,6 +17,7 @@
         </span>
     }
 </span>
+
 
 @code   {
     private bool isImgExist = true;

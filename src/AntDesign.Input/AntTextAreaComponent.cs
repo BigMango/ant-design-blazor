@@ -30,6 +30,6 @@ namespace AntDesign
         [Parameter]
         public bool disabled { get; set; }
         [Parameter]
-        protected EventCallback<UIChangeEventArgs> OnChange { get; set; }
+        public EventCallback<ChangeEventArgs> OnChange { get; set; }
     }
 }

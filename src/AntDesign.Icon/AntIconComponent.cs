@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Components;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace AntDesign
 {
@@ -48,7 +49,7 @@ namespace AntDesign
         }
 
         [Parameter]
-        public EventCallback<UIMouseEventArgs> OnClick { get; set; }
+        public EventCallback<MouseEventArgs> OnClick { get; set; }
 
     }
 }

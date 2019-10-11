@@ -31,11 +31,19 @@ namespace AntDesign
         [Parameter]
         public double duration { get; set; } = 2;
 
-        protected override void OnInit()
+        protected override void OnInitialized()
         {
+            base.OnInitialized();
             AntMessageService.OnShow += ShowMessage;
             AntMessageService.OnHide += HideMessage;
         }
+
+        //protected override void OnInit()
+        //{
+        //    AntMessageService.OnShow += ShowMessage;
+        //    AntMessageService.OnHide += HideMessage;
+        //}
+
         protected override void OnParametersSet()
         {
             AntMessageService.interval = duration;

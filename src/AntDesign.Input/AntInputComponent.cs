@@ -92,7 +92,7 @@ namespace AntDesign
         protected string InputClass => $"{this.getInputClassName()}".Trim();
 
 
-        protected void OnChangeHandler(UIChangeEventArgs ev)
+        protected void OnChangeHandler(ChangeEventArgs ev)
         {
             if (disabled)
             {

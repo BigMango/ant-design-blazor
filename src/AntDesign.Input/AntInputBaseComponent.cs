@@ -35,6 +35,6 @@ namespace AntDesign
         [Parameter]
         public string type { get; set; } = "text";
         [Parameter]
-        protected EventCallback<string> OnChange { get; set; }
+        public EventCallback<string> OnChange { get; set; }
     }
 }

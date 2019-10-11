@@ -23,22 +23,34 @@ namespace AntDesign
 
             return base.OnParametersSetAsync();
         }
-        protected override Task OnAfterRenderAsync()
+
+        protected override void OnAfterRender(bool firstRender)
         {
             if (this.checkboxGroup != null)
             {
                 this.checkboxGroup.registerValue(this.value);
                 this.name = this.checkboxGroup.name;
             }
-            return base.OnAfterRenderAsync();
+            base.OnAfterRender(firstRender);
         }
+
+
+        //protected override Task OnAfterRenderAsync()
+        //{
+        //    if (this.checkboxGroup != null)
+        //    {
+        //        this.checkboxGroup.registerValue(this.value);
+        //        this.name = this.checkboxGroup.name;
+        //    }
+        //    return base.OnAfterRenderAsync();
+        //}
 
         [Parameter]
         public bool indeterminate { get; set; }
 
         [CascadingParameter(Name = "checkboxGroup")]
         public AntCheckboxGroupContext checkboxGroup { get; set; }
-        protected void OnChangeHandler(UIChangeEventArgs ev)
+        protected void OnChangeHandler(ChangeEventArgs ev)
         {
            
             if (this.checkboxGroup != null)

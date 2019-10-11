@@ -26,6 +26,6 @@ namespace AntDesign
         public string Component { get; set; } = "article";
 
         [Parameter]
-        protected RenderFragment ChildContent { get; set; }
+        public RenderFragment ChildContent { get; set; }
     }
 }

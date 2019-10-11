@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace AntDesign
 {
@@ -73,7 +74,7 @@ namespace AntDesign
         }
 
         [Parameter]
-        protected RenderFragment ChildContent { get; set; }
+        public RenderFragment ChildContent { get; set; }
 
 
         private string _icon;
@@ -172,8 +173,8 @@ namespace AntDesign
         }
 
         [Parameter]
-        protected EventCallback<UIMouseEventArgs> OnClick { get; set; }
-        protected void OnClickHandler(UIMouseEventArgs ev)
+        public EventCallback<MouseEventArgs> OnClick { get; set; }
+        protected void OnClickHandler(MouseEventArgs ev)
         {
             if (loading || disabled)
             {

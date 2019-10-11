@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace AntDesign
 {
@@ -43,7 +44,7 @@ namespace AntDesign
         public string enterButtonText { get; set; }
 
         public bool hasEnterButton => !string.IsNullOrEmpty(enterButtonText) || enterButton;
-        protected void OnClickHandler(UIMouseEventArgs ev)
+        protected void OnClickHandler(MouseEventArgs ev)
         {
             onSearch.InvokeAsync(value);
         }

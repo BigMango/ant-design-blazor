@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace AntDesign
 {
@@ -39,7 +40,7 @@ namespace AntDesign
             }
             return Colors.PresetColorRegex.IsMatch(color);
         }
-        protected void OnClickHandler(UIMouseEventArgs ev)
+        protected void OnClickHandler(MouseEventArgs ev)
         {
             this.visible = false;
         }

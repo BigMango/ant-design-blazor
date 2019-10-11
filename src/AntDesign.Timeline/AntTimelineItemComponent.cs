@@ -65,10 +65,17 @@ namespace AntDesign
         }
 
         [CascadingParameter(Name = "Timeline")] private AntTimelineComponent ParentTimeline { get; set; }
-        protected override void OnInit()
+
+        protected override void OnInitialized()
         {
+            base.OnInitialized();
             add();
         }
+
+        //protected override void OnInit()
+        //{
+        //    add();
+        //}
 
         public void add()
         {

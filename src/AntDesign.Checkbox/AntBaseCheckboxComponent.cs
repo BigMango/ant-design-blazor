@@ -25,7 +25,7 @@ namespace AntDesign
         [Parameter]
         public string prefixCls { get; set; } = "rc-checkbox";
 
-        protected void OnChangeHandler(UIChangeEventArgs ev)
+        protected void OnChangeHandler(ChangeEventArgs ev)
         {
             if (disabled)
             {

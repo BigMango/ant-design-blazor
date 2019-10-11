@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace AntDesign
 {
@@ -61,7 +62,7 @@ namespace AntDesign
         [Parameter]
         public RenderFragment UnCheckedChildren { get; set; }
 
-        protected void OnClickHandler(UIMouseEventArgs ev)
+        protected void OnClickHandler(MouseEventArgs ev)
         {
             if (disabled || loading)
             {
@@ -71,6 +72,6 @@ namespace AntDesign
             OnChange.InvokeAsync(this.Checked.GetValueOrDefault());
         }
         [Parameter]
-        protected EventCallback<bool> OnChange { get; set; }
+        public EventCallback<bool> OnChange { get; set; }
     }
 }
