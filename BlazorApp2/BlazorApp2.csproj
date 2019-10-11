@@ -14,4 +14,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Blazor.DevServer" Version="3.0.0-preview9.19465.2" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\AntDesign.BaseComponent\AntDesign.BaseComponent.csproj" />
+    <ProjectReference Include="..\src\AntDesign.Icon\AntDesign.Icon.csproj" />
+  </ItemGroup>
+
 </Project>
