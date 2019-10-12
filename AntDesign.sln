@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntDesign.Button", "src\AntDesign.Button\AntDesign.Button.csproj", "{89B53511-B9B9-4272-AAC0-644125CF6842}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntDesign.Web", "test\AntDesign.Web\AntDesign.Web.csproj", "{8742CA56-E396-4E11-8D4B-145CDB2FB871}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntDesign.BaseComponent", "src\AntDesign.BaseComponent\AntDesign.BaseComponent.csproj", "{9F5D7982-BF09-4F77-8019-72BA054FE15A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntDesign.Icon", "src\AntDesign.Icon\AntDesign.Icon.csproj", "{65F23CD5-BCDA-4581-896C-996087A61C58}"
@@ -41,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntDesign.Message", "src\An
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntDesign.Timeline", "src\AntDesign.Timeline\AntDesign.Timeline.csproj", "{BB08CAC5-948E-40FD-A665-AC5334BA4BCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{9C4C1932-89A3-4963-B717-5D07BC23E386}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntDesign.Web", "test\AntDesign.Web\AntDesign.Web.csproj", "{88ECB1A2-B412-406C-A008-B245F14CAC29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +51,6 @@ Global
 		{89B53511-B9B9-4272-AAC0-644125CF6842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89B53511-B9B9-4272-AAC0-644125CF6842}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89B53511-B9B9-4272-AAC0-644125CF6842}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8742CA56-E396-4E11-8D4B-145CDB2FB871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8742CA56-E396-4E11-8D4B-145CDB2FB871}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8742CA56-E396-4E11-8D4B-145CDB2FB871}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8742CA56-E396-4E11-8D4B-145CDB2FB871}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F5D7982-BF09-4F77-8019-72BA054FE15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F5D7982-BF09-4F77-8019-72BA054FE15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F5D7982-BF09-4F77-8019-72BA054FE15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -121,10 +115,10 @@ Global
 		{BB08CAC5-948E-40FD-A665-AC5334BA4BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB08CAC5-948E-40FD-A665-AC5334BA4BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB08CAC5-948E-40FD-A665-AC5334BA4BCC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C4C1932-89A3-4963-B717-5D07BC23E386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C4C1932-89A3-4963-B717-5D07BC23E386}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C4C1932-89A3-4963-B717-5D07BC23E386}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C4C1932-89A3-4963-B717-5D07BC23E386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88ECB1A2-B412-406C-A008-B245F14CAC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ECB1A2-B412-406C-A008-B245F14CAC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88ECB1A2-B412-406C-A008-B245F14CAC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88ECB1A2-B412-406C-A008-B245F14CAC29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

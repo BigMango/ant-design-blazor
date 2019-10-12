@@ -1,3 +1,4 @@
+using AntDesign.Web;
 using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -7,7 +8,6 @@ namespace AntDesign.Web
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAntMessage();
         }
 
         public void Configure(IComponentsApplicationBuilder app)

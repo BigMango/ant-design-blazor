@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
     <LangVersion>7.3</LangVersion>
     <RazorLangVersion>3.0</RazorLangVersion>
   </PropertyGroup>
@@ -9,73 +10,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.0.0-preview9.19465.2" />
     <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.0.0-preview9.19465.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.0.0-preview9.19465.2" />
     <PackageReference Include="Microsoft.AspNetCore.Blazor.DevServer" Version="3.0.0-preview9.19465.2" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.0.0" />
   </ItemGroup>
+
   <ItemGroup>
-    <!-- extends watching group to include *.js files -->
-    <Watch Include="..\..\src\**\*.razor" Exclude="node_modules\**\*.js;$(DefaultExcludes)" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\AntDesign.Blazor\AntDesign.Blazor.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Update="Pages\AvatarDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\ButtonDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\CheckboxDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\GridDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\IconDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\Index.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\InputDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\MessageDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\RadioDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\SwitchDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\TagDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\TimelineDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Pages\TypographyDemo.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
-    <Content Update="Shared\DemoContainer.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
-    </Content>
     <Content Update="Shared\MainLayout.razor">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
@@ -89,4 +30,21 @@
       <Generator>MSBuild:RazorGenerateComponentDeclarationDesignTime</Generator>
     </Content>
   </ItemGroup>
+
+  <ItemGroup>
+    <Watch Remove="Shared\DemoContainer.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\DemoContainer.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Shared\DemoContainer.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AntDesign.Blazor\AntDesign.Blazor.csproj" />
+  </ItemGroup>
+
 </Project>
